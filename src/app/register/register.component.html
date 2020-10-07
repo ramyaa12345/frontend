@@ -1,0 +1,28 @@
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <ul class="navbar-nav navbar-collapse justify-content-end">
+            <li><a routerLink="/login" class="nav-link">Login</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="center">
+    <h1>Register</h1>
+    <div class="p">
+        <label>Name: </label>
+        <input type="text" name="name" [(ngModel)]="name">
+    </div>
+    <div class="p">
+        <label>Email id: </label>
+        <input type="email" name="emailId" [(ngModel)]="emailId">
+    </div>
+    <div class="p">
+        <label>College name: </label>
+        <input type="college" name="college" [(ngModel)]="college">
+    </div>
+    <div class="p">
+        <label>Password: </label>
+        <input type="password" name="password" [(ngModel)]="password">
+    </div>
+    <input type="button" (click)="onUpload()" value="REGISTER">
+</div>

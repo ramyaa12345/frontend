@@ -1,0 +1,17 @@
+<div class="center">
+    <h1>Login</h1>
+    <div class="p">
+        <label>Email id: </label>
+        <input type="email" name="emailId" [(ngModel)]="emailId">
+    </div>
+    <div class="p">
+        <label>Password: </label>
+        <input type="password" name="password" [(ngModel)]="password">
+    </div>
+    <input type="button" (click)="login()" value="login" class="btn btn-success">
+    <!--<div class="alert alert-warning" class="p">{{errorMessage}}</div>
+    <div class="alert alert-warning" class="p">{{errorDataMessage}}</div>-->
+    <div class="p">
+        Don't have account? <a href="http://localhost:4200/register">register here</a>
+    </div>
+</div>
